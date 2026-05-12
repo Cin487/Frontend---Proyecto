@@ -1,0 +1,189 @@
+/*---------------------------------------------------GENERALES--------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+button {
+  background-color: #5e5c5c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*---------------------------------------------------HEADER--------------------------------------------*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+.cabezera {
+  display: flex;
+  background-color: #080808;
+  color: aliceblue;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.carrito-usuario {
+  border-color: #080808;
+  order: -3;
+  gap: 6px;
+}
+.menu-busqueda {
+  border-color: #080808;
+  gap: 6px;
+}
+.parrafo-1 {
+  color: aliceblue;
+  font-size: 1em;
+  border: #080808 solid 1px;
+}
+
+/*-----------------------------------------------------MAIN-----------------------------------------------------*/
+.marca {
+  color: #080808;
+  font-size: 2.2em;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: #8382821c solid 0px;
+  height: 70px;
+  width: 100%;
+  margin-top: 90px;
+  align-items: center;
+}
+h2 {
+  color: #080808;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  border: #5e5d5d solid 1px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+p {
+  color: #080808;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+.productos-destacados {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #080808;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  border: 0px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+article {
+  margin: 4rem;
+  color: #080808;
+  background-color: #e2d3d3;
+  width: 300px;
+  padding-bottom: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/*-----------------------------------------------------FOOTER-----------------------------------------------------*/
+
+.footer {
+  background-color: #e2d3d3;
+  color: rgb(7, 7, 7);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contacto-footer {
+  color: rgb(7, 7, 7);
+  font-size: 1.2em;
+  margin: 10px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.lista-footer {
+  list-style: none;
+  gap: 20px;
+  font-style: italic;
+}
+.nav-footer {
+  align-items: center;
+  gap: 20px;
+  font-style: italic;
+}
+.iconos-redes {
+  gap: 20px;
+  margin-top: 10px;
+  border: #e2d3d3 solid 0px;
+}
+/*-----------------------------------------------------PAGES-----------------------------------------------------*/
+.body-contac {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  background-color: #e2d3d3;
+  color: rgb(7, 7, 7);
+}
+.contacto {
+  color: rgb(7, 7, 7);
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.formulario {
+  display: grid;
+  grid-template-columns: 0fr;
+  text-align: center;
+  gap: 0rem;
+  margin-bottom: 1rem;
+  border: #f7f4f4 solid 1px;
+  border-radius: 1rem;
+  padding: 5rem;
+  background-color: #f7f4f4;
+}
+.enviar {
+  background-color: #53e653;
+}
+.limpiar {
+  background-color: #53e3e8;
+}
+.tabla-talles {
+  display: flex;
+  justify-content: center;
+  color: rgb(7, 7, 7);
+  padding: 0;
+  background-color: #fdfcfc;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/*-----------------------------------------------------MEDIA QUERIES-----------------------------------------------------*/
+@media (max-width: 600px) {
+  header,
+  footer {
+    flex-direction: column;
+  }
+  .marca {
+    font-size: 1.5em;
+  }
+  .formulario {
+    padding: 2rem;
+  }
+}
